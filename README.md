@@ -14,7 +14,7 @@ Darshan Shivakumar
 Register a new user, Login with a user, Logout of a user.
 - **Product Search:** 
 Search for a laptop or phone from multiple retailers.
-- **Search filtering:** 
+- **Search Filtering:** 
 Filter search by Price & Retailer.
 - **Search History:** 
 View history of all searches made on the website
