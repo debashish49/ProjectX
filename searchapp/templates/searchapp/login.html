@@ -1,0 +1,121 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font embeds -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Staatliches&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>Project 'X'</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Project 'X'</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'searchapp:home' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'searchapp:searchphones' %}">Mobile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'searchapp:searchlaptops' %}">Laptops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'searchapp:history' %}">History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'searchapp:aboutus' %}">About Us</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'searchapp:signup' %}">Sign Up</a>
+        </li>
+        {% if request.user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'searchapp:mycart' %}">My Cart</a>
+        </li>
+        {% endif %}
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'searchapp:login' %}">Login</a>
+        </li>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="contentcontainer">
+      <div class='contentwrapper mx-auto'>
+      <div class="content align-self-center">
+          {% if request.user.is_authenticated %}
+          <h1 class="text-content">Login:</h1>
+          {% else %}
+          <h2 align ="center" class="text-status">User Currently Logged Out</h2><br>
+          <h2 class="text-login">Login:</h2>
+          {% endif %}
+          {% if message %}    
+          <div><h1 class="error-message">{{ message }}</h1></div>
+          {% endif %}
+          <div class="form-align" align="center">
+              <form class="form-group" align="center" method="POST" action="{% url 'searchapp:login' %}">
+                {% csrf_token %}
+              <div class="form-group">
+                  {{ form.username|as_crispy_field}}
+              </div>
+              <div class="form-group">
+                {{ form.password|as_crispy_field}}
+              </div>
+              <div class="form-group" align="center">
+                <button class="btn btn-dark btn-elegant btn-rounded btn-sm my-0 waves-effect waves-light" type="submit">Login</button>
+              </div>
+              </form>
+            </div>
+      </div>
+      </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container-fluid padding">
+          <div class="row text-center">
+            <h5 class="col-lg-12">SOURCES:</h5>
+          </div>
+          <div class="row text-center">
+            <h6 class="col"><a href="https://www.yodobashi.com/" target="_blank">Yodobashi</a></h6>
+            <h6 class="col"><a href="https://www.yamada-denkiweb.com/" target="_blank">Yamada Denki</a></h6>
+            <h6 class="col"><a href="https://www.rakuten.co.jp/" target="_blank">Rakuten</a></h6>
+            <h6 class="col"><a href="https://kakaku.com/" target="_blank">Kakaku</a></h6>
+            <h6 class="col"><a href="https://www.biccamera.com/bc/main/" target="_blank">Bic Camera</a></h6>
+            <h6 class="col"><a href="https://www.nojima.co.jp/" target="_blank">Nojima</a></h6>
+            <h6 class="col"><a href="https://www.apple.com/jp/shop" target="_blank">Apple</a></h6>
+          </div>
+          <hr>
+          <div class="row text-center projdiv">
+              <h5 class="col-lg-12 proj"> Project 'X' </h5>
+          </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
