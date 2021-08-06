@@ -1,14 +1,14 @@
 # ProjectX
 ProjectX is a Django application that displays laptops and mobile phones from popular Japanese e-commerce websites on a single app - for users to search, compare and select the best product according to their preference.
 
-# Group Members									  
+## Group Members									  
 Debashish Sahoo
 
 Aditya Sundar
 
 Darshan Shivakumar
 
-# Project Functionalities
+## Project Functionalities
 - **Login and Registration System:** 
 Register a new user, Login with a user, Logout of a user.
 - **Product Search:** 
@@ -20,13 +20,13 @@ View history of all searches made on the website.
 - **Shopping Cart**: 
 Add product to cart, View cart, Remove specific product from cart, Remove all products from cart, Print PDF of cart. _Feature available only when a user is logged in_.
 
-# Languages Used
+## Languages Used
 
 - Python (Django)
 - HTML
 - CSS
 
-# How To Run Our Project
+## How To Run Our Project
 
 1. Clone the entire repository.
 2. Open the Terminal on your Mac (Command Prompt on Windows) and run the following lines of code:-
@@ -45,9 +45,9 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
     
     `python3 manage.py runserver` 
 
-# Project Walkthrough 
+## Project Walkthrough 
  
-## Web Scraping: 
+### Web Scraping: 
 Web scraping refers to the extraction of data from a website. To perform this task, we made use of the Python-based Beautiful Soup library. It allows us to parse through the HTML code of a website and extract the required information. 
 
 To perform web scraping, a comprehensive knowledge of the various HTML tags is necessary, as the data you intend to scrape is embedded within these various tags. The web browser’s ‘Inspect Element’ feature comes into hand here, which allows you to view the HTML code of any section of the web page that you’re currently viewing. This helps us decipher the location of the information we intend to extract.
@@ -61,34 +61,34 @@ To perform web scraping, a comprehensive knowledge of the various HTML tags is n
 
 Our project borrows data from renowned Japanese retailers, namely Yodobashi Camera, Bic Camera, Nojima, Yamada Denki, Kakaku and Rakuten, and Apple. For each e-commerce website, we programmed a code that recursively parsed through hundreds of pages of product results and extracted the product’s name, price, URL and image. We first added these details to a CSV file for keeping simple track of the items scraped. Then, we added these records to a MySQL Database, namely ‘products’, separated into two tables: ‘phones’ and ‘laptops’. 
 
-## Search Algorithm:
+### Search Algorithm:
 By incorporating Python-MySQL connectivity, we first developed a search algorithm that takes the user’s search input and displays details of relevant products from our database. We made use of MySQL’s full-text search feature, which displays all closely-matched records from the database, and ranks them by relevance. 
 
 
-## Django:
+### Django:
 
 Our website is basically a product of a Django-based project. Django is a free-to-use high-level Python Web framework that encourages clean rapid project developments, by using the model-template-views architectural pattern.
 
 Once we obtained all the product details and developed the search algorithm, we incorporated it into a new Django project and continued to develop our project further.
 
-## Product Search:
+### Product Search:
 Our website provides you with a beautiful search bar, that lets you search for your desired product. The results are displayed in a very attractive manner- clearly showing the products’ images, names, prices & the name of the retailer that sells the product. Clicking on the product name instantly takes you to the product’s original link from the retailer. 
 
 ![image](https://user-images.githubusercontent.com/69211573/128526487-9b82c451-ca42-46eb-b5a2-43319590a316.png)
 
 To program our search queries, we used Django’s raw function, that lets us execute raw SQL queries on Django models. For example:
  
-## Filtering Search Results:
+### Filtering Search Results:
 The product results can be further narrowed down using our smart filtering system, which allows the user to filter their searches: (1) By Retailer & (2) By Price
 ![image](https://user-images.githubusercontent.com/69211573/128526771-ee263f8a-570d-4630-9da0-a89d6e2164c1.png)
 
 
-## Search History:
+### Search History:
 This functionality allows us to see the history of all searches made (as well as the date and time of the search) when no user is logged in, and also the search history of each specific user when he/she is logged in! 
 
 ![image](https://user-images.githubusercontent.com/69211573/128526845-83ae53d3-bb69-45d7-a572-fbc6d791245e.png)
 
-## Login and Registration System:
+### Login and Registration System:
 New user registrations can be made by visiting the ‘Sign Up’ page. It is as simple as entering the relevant fields such as username, name, email and password, and proceeding to click the Register button. 
 
 ![image](https://user-images.githubusercontent.com/69211573/128526928-dd173fc4-2dfc-4976-813b-b0f4942633ab.png)
@@ -101,7 +101,7 @@ Once logged in, the user is redirected to the home page where he/she is welcomed
 
 ![image](https://user-images.githubusercontent.com/69211573/128527129-59d16ab1-7299-4fa3-8c5d-f9c87bcbc034.png)
 
-## Shopping Cart:
+### Shopping Cart:
 This feature allows a registered user to add a product to their shopping cart, by simply clicking the Add to Cart button next to a product:
 
 ![image](https://user-images.githubusercontent.com/69211573/128527243-a970ec37-e7dd-40f9-bfea-7754e8811864.png)
