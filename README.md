@@ -30,7 +30,8 @@ To perform web scraping, a comprehensive knowledge of the various HTML tags is n
 
 ![image](https://user-images.githubusercontent.com/69211573/128525767-68ff78e9-63bb-4d66-ae4d-dffb444a66eb.png)
 
-![image](https://user-images.githubusercontent.com/69211573/128526150-eda62424-4f04-42a3-afee-190df27a9637.png)
+<img src="https://user-images.githubusercontent.com/69211573/128526150-eda62424-4f04-42a3-afee-190df27a9637.png" height="200" width="1500">
+
 
 ![image](https://user-images.githubusercontent.com/69211573/128526183-d6d1a253-8151-42ac-bbee-1861a6355eed.png)
 
