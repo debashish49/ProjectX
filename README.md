@@ -113,3 +113,6 @@ The Print PDF button uses a bit of simple JavaScript, and allows the user to vie
 Debashish Sahoo <br>
 Aditya Sundar <br>
 Darshan Shivakumar
+
+## License & Code Re-Use
+The code for this project is released under the [GPL-3.0 License](./LICENSE). We ask that you please include a link back to this GitHub repository.
