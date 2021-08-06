@@ -16,9 +16,9 @@ Search for a laptop or phone from multiple retailers.
 - **Search Filtering:** 
 Filter search by Price & Retailer.
 - **Search History:** 
-View history of all searches made on the website
+View history of all searches made on the website.
 - **Shopping Cart**: 
-Add product to cart, View cart, Remove specific product from cart, Remove all products from cart, Print PDF of cart. _Feature available only when a user is logged in_
+Add product to cart, View cart, Remove specific product from cart, Remove all products from cart, Print PDF of cart. _Feature available only when a user is logged in_.
 
 # Languages Used
 
