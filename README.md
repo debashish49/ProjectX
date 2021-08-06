@@ -8,7 +8,6 @@ Aditya Sundar
 
 Darshan Shivakumar
 
-
 # Project Functionalities
 - **Login and Registration System:** 
 Register a new user, Login with a user, Logout of a user.
@@ -20,6 +19,31 @@ Filter search by Price & Retailer.
 View history of all searches made on the website
 - **Shopping Cart**: 
 Add product to cart, View cart, Remove specific product from cart, Remove all products from cart, Print PDF of cart. Feature available only when a user is logged in
+
+# Languages Used
+
+- Python (Django)
+- HTML
+- CSS
+
+# How To Run Our Project
+
+1. Clone the entire repository.
+2. Open the Terminal on your Mac (Command Prompt on Windows) and run the following lines of code:-
+
+   Use appropriate command to navigate into the project directory:
+   
+    `cd projectx`
+   
+   Activate a virtual environment (optional):
+   
+    `virtualenv env`  
+    
+    `source env/bin/activate` &nbsp; #look for the path to your directory
+    
+    Run the server:
+    
+    `python3 manage.py runserver` 
 
 # Project Walkthrough 
  
