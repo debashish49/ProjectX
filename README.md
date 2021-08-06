@@ -1,6 +1,12 @@
 # ProjectX
 ProjectX is a Django application that displays laptops and mobile phones from popular Japanese e-commerce websites on a single app - for users to search, compare and select the best product according to their preference.
 
+# Group Members									   
+1.   	Debashish Sahoo							     
+2.   	Aditya Sundar
+3.   	Darshan Shivakumar
+
+
 # Project Functionalities
 - **Login and Registration System:** 
 Register a new user, Login with a user, Logout of a user.
