@@ -1,11 +1,6 @@
 # ProjectX
 ProjectX is a Django application that displays laptops and mobile phones from popular Japanese e-commerce websites on a single app - for users to search, compare and select the best product according to their preference.
 
-## Group Members									  
-Debashish Sahoo <br>
-Aditya Sundar <br>
-Darshan Shivakumar
-
 ## Project Functionalities
 - **Login and Registration System:** 
 Register a new user, Login with a user, Logout of a user.
@@ -113,3 +108,8 @@ To store the cart details of a particular user, we designed the program to creat
 The Print PDF button uses a bit of simple JavaScript, and allows the user to view a PDF preview of their shopping cart, giving them options to either print it immediately or save it as a PDF.
 
 ![image](https://user-images.githubusercontent.com/69211573/128527363-5df37ada-fea5-46e6-9a6b-fcaaf879d454.png)
+
+## Group Members									  
+Debashish Sahoo <br>
+Aditya Sundar <br>
+Darshan Shivakumar
