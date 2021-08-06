@@ -22,7 +22,7 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
 ## How To Run Our Project
 
 1. Clone the entire repository.
-2. Open the Terminal on your Mac (Command Prompt on Windows) and run the following lines of code:-
+2. Open your Terminal (Mac) and run the following lines of code:-
 
    Use appropriate command to navigate into the project directory:
    
