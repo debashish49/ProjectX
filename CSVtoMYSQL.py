@@ -2,7 +2,7 @@ import csv
 import mysql.connector
 
 #connecting to database
-con = mysql.connector.connect(host="localhost",user="root",passwd="",database="products")
+con = mysql.connector.connect(host="localhost",user="root",passwd="",database="products")     # update your user, password, and host
 cursor = con.cursor()
 
 cursor.execute("DROP TABLE IF EXISTS laptops")
