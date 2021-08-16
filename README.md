@@ -21,7 +21,7 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
 
 ## How To Run Our Project
 
-_**Since this project was predominantly designed to showcase Python-database connectivity, the scraping program was designed to be a one-time process. There is a high probability that you may encounter issues with HTTP requests while running the scraping files. Hence, in step 3, we ask you to instead run the CSVtoMYSQL.py program, which adds all the pre-scraped product details to your local MySQL database**_ 
+_**Since this project was predominantly designed to showcase Python-database connectivity, the scraping program was designed to be a one-time process. Hence, in step 3, we ask you to instead run the CSVtoMYSQL.py program, which adds all the pre-scraped product details to your local MySQL database**_ 
 
 1. Download the entire repository.
 
