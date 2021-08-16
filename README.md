@@ -1,5 +1,5 @@
 # ProjectX
-ProjectX is a user-friendly tool that displays laptops and mobile phones from popular Japanese e-commerce websites on a single app - for customers to search, compare and select the best product according to their preference.
+ProjectX is a user-friendly tool that displays laptops and mobile phones pre-scraped from popular Japanese e-commerce websites on a single app - for customers to search, compare and select the best product according to their preference.
 
 ## Project Functionalities
 - **Login and Registration System:** 
@@ -22,7 +22,11 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
 ## How To Run Our Project
 
 1. Clone the entire repository.
-2. Open your Terminal (Mac) and run the following lines of code:-
+2. Run the python scraping files to add product details to your local MySQL database. 
+
+_**Since this project was predominantly designed to showcase Python-database connectivity, the scraping program was designed to be a one-time process. There is a high probability that you may encounter issues with HTTP requests while running the scraping files. Hence, this is one reason why you may not be able to run our project!**_ 
+
+3. Open your Terminal (Mac) and run the following lines of code:-
 
    Use appropriate command to navigate into the project directory:
    
@@ -41,6 +45,9 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
 ## Project Walkthrough 
  
 ### Web Scraping: 
+
+**_NOTE:_ This project does NOT automate the web scraping process.**
+
 Web scraping refers to the extraction of data from a website. To perform this task, we made use of the Python-based Beautiful Soup library. It allows us to parse through the HTML code of a website and extract the required information. 
 
 To perform web scraping, a comprehensive knowledge of the various HTML tags is necessary, as the data you intend to scrape is embedded within these various tags. The web browser’s ‘Inspect Element’ feature comes into hand here, which allows you to view the HTML code of any section of the web page that you’re currently viewing. This helps us decipher the location of the information we intend to extract.
@@ -52,7 +59,7 @@ To perform web scraping, a comprehensive knowledge of the various HTML tags is n
 
 ![image](https://user-images.githubusercontent.com/69211573/128526183-d6d1a253-8151-42ac-bbee-1861a6355eed.png)
 
-Our project borrows data from renowned Japanese retailers, namely Yodobashi Camera, Bic Camera, Nojima, Yamada Denki, Kakaku and Rakuten, and Apple. For each e-commerce website, we programmed a code that recursively parsed through hundreds of pages of product results and extracted the product’s name, price, URL and image. We first added these details to a CSV file for keeping simple track of the items scraped. Then, we added these records to a MySQL Database, namely ‘products’, separated into two tables: ‘phones’ and ‘laptops’. 
+Our project borrows data from renowned Japanese retailers, namely Yodobashi Camera, Bic Camera, Nojima, Yamada Denki, Kakaku, Rakuten, and many others. For each e-commerce website, we programmed a code that recursively parsed through hundreds of pages of product results and extracted the product’s name, price, URL and image. We first added these details to a CSV file for keeping simple track of the items scraped. Then, we added these records to a MySQL Database, namely ‘products’, separated into two tables: ‘phones’ and ‘laptops’. 
 
 ### Search Algorithm:
 By incorporating Python-MySQL connectivity, we first developed a search algorithm that takes the user’s search input and displays details of relevant products from our database. We made use of MySQL’s full-text search feature, which displays all closely-matched records from the database, and ranks them by relevance. 
