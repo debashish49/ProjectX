@@ -21,12 +21,20 @@ Add product to cart, View cart, Remove specific product from cart, Remove all pr
 
 ## How To Run Our Project
 
+_**Since this project was predominantly designed to showcase Python-database connectivity, the scraping program was designed to be a one-time process. There is a high probability that you may encounter issues with HTTP requests while running the scraping files. Hence, in step 3, we ask you to instead run the CSVtoMYSQL.py program, which adds all the pre-scraped product details to your local MySQL database**_ 
+
 1. Clone the entire repository.
-2. Run the python scraping files to add product details to your local MySQL database. 
 
-_**Since this project was predominantly designed to showcase Python-database connectivity, the scraping program was designed to be a one-time process. There is a high probability that you may encounter issues with HTTP requests while running the scraping files. Hence, this is one reason why you may not be able to run our project!**_ 
+2. In _CSVtoMYSQL.py_, insert the correct username, password, and hostname for your MySQL server in line .
 
-3. Open your Terminal (Mac) and run the following lines of code:-
+
+3. Run _CSVtoMYSQL.py_ in your local python terminal (ensure you're in the _projectx_ directory), which will add all the pre-scraped product details in the _csv_ folder to your MySQL database.
+
+
+4. In _settings.py_, insert the correct username, password, and hostname for your MySQL server in the DATABASES section.
+
+
+5. Open your Terminal (Mac) and run the following lines of code:-
 
    Use appropriate command to navigate into the project directory:
    
