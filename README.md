@@ -124,6 +124,22 @@ The Print PDF button uses a bit of simple JavaScript, and allows the user to vie
 
 ![image](https://user-images.githubusercontent.com/69211573/128527363-5df37ada-fea5-46e6-9a6b-fcaaf879d454.png)
 
+## Official Sources
+[Yodbashi Camera](https://www.yodobashi.com)
+
+[Yamada Denki](https://www.yamada-denki.jp/)    
+
+[Bic Camera](https://https://www.biccamera.com/)   
+
+[Rakuten](https://www.rakuten.co.jp/)  
+
+[Apple](https://www.apple.com/)      
+
+[Kakaku](https://kakaku.com/)    
+
+[Nojima](https://www.nojima.co.jp/)
+
+
 ## Group Members									  
 [Debashish Sahoo](https://github.com/debashishsahoo) <br>
 Aditya Sundar <br>
