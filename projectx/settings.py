@@ -82,10 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'products',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'USER': 'root',         # update your user
+        'PASSWORD': '',         # update your password
+        'HOST': 'localhost',    # update your host
+        'PORT': '3306',         # update your port
     }
 }
 
