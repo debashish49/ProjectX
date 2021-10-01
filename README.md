@@ -139,6 +139,8 @@ The Print PDF button uses a bit of simple JavaScript, and allows the user to vie
 
 [Nojima](https://www.nojima.co.jp/)
 
+[Bootstrap](https://getbootstrap.com/)
+
 
 ## Group Members									  
 [Debashish Sahoo](https://github.com/debashishsahoo) <br>
@@ -146,4 +148,4 @@ Aditya Sundar <br>
 Darshan Shivakumar
 
 ## License & Code Re-Use
-The code for this project is released under the [GPL-3.0 License](./LICENSE). We ask that you please include a link back to this GitHub repository.
+This code is licensed under the [GPL-3.0 License](./LICENSE). Please include a link to this GitHub repository.
