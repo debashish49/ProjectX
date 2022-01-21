@@ -84,10 +84,8 @@ Our website provides you with a beautiful search bar, that lets you search for y
 
 ![image](https://user-images.githubusercontent.com/69211573/128526487-9b82c451-ca42-46eb-b5a2-43319590a316.png)
 
-To program our search queries, we used Django’s raw function, that lets us execute raw SQL queries on Django models. For example:
+To program our search queries, we used Django’s raw function, that lets us execute raw SQL queries on Django models. 
 
-`query = "SELECT * FROM laptops WHERE url like '%%"+retailer+"%%' and MATCH(name) AGAINST ('"+search+"' IN NATURAL LANGUAGE MODE) order by price"`
- 
 ### Filtering Search Results:
 The product results can be further narrowed down using our smart filtering system, which allows the user to filter their searches: (1) By Retailer & (2) By Price
 ![image](https://user-images.githubusercontent.com/69211573/128526771-ee263f8a-570d-4630-9da0-a89d6e2164c1.png)
