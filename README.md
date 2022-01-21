@@ -125,7 +125,7 @@ The Print PDF button uses a bit of simple JavaScript, and allows the user to vie
 ![image](https://user-images.githubusercontent.com/69211573/128527363-5df37ada-fea5-46e6-9a6b-fcaaf879d454.png)
 
 ## Official Sources
-[Yodbashi Camera](https://www.yodobashi.com)
+[Yodobashi Camera](https://www.yodobashi.com)
 
 [Yamada Denki](https://www.yamada-denki.jp/)    
 
