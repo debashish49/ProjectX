@@ -144,7 +144,7 @@ The Print PDF button uses a bit of simple JavaScript, and allows the user to vie
 
 ## Group Members									  
 [Debashish Sahoo](https://github.com/debashishsahoo) <br>
-Aditya Sundar <br>
+[Aditya Sundar] (https://github.com/adityasundar15) <br>
 Darshan Shivakumar
 
 ## License 
